@@ -1,0 +1,98 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hoi", "Hello", "Good day"],
+         "responses": ["Hello, Laura, I'm Loccie, the chatbot that assists you in guarding against location-based services and apps. How can I help you?", "Hi Laura, how can I help?", "Hi Laura, I'm Loccie, the chatbot that helps you protect your location data from apps and services that exploit it. What can I do for you?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can give you advice on your location privacy, I can give you an update on your protected data and I can give you an update on your risk status"],
+         "context": [""]
+        },
+        {"tag": "advice_tips",
+         "patterns": ["tips","Do you have any tips on how I can protect myself?", "Do you have any tips?", "Tips?", "What are the tips?", "Are there any tips?", "How can I protect myself?" ],
+         "responses": ["I have some tips for you: 1. You can use a VPN, , 2. Limit apps that have access to your location data, 3. use anti-tracking software, 4. Limit ad tracking, 5. Check if you're sharing your real-time location, 6 Secure your Google account."],
+         "context": [""]
+        },
+        {"tag": "what_vpn",
+         "patterns": ["What is a VPN","How does a VPN work?", "Can you explain what a VPN is?", "Can you explain what a VPN is?" ],
+         "responses": ["A virtual private network (VPN) establishes a secure, encrypted connection between your computer and the internet, providing a private tunnel for your data and communications while you use public networks. A VPN prevents trackers from getting your location data. NOTE: A VPN DOESN't protect you from: malware, phishing scams and data on your device"],
+         "context": [""]
+        },
+        {"tag": "what_anti_tracking",
+         "patterns": ["What is anti-tracking software?","How does anti-tracking software work?", "Can you explain what anti-tracking software is?"],
+         "responses": ["Anti-tracking extensions can detect these trackers and their sources. They can then block them by preventing the source from loading content. Without being able to load its content, the source can't track you."],
+         "context": [""]
+        },
+        {"tag": "ad_tracking",
+         "patterns": ["What is ad tracking?","How does ad tracking work?", "Can you explain what ad tracking is?"],
+         "responses": ["Ad tracking happens when companies use cookies and other tracking methods to follow you online and gather insights into your behavior and preferences to serve you more relevant, targeted ads."],
+         "context": [""]
+        },
+        {"tag": "advice_google",
+         "patterns": ["How do I secure my google account?", "Can you explain how I can secure my google account?"],
+         "responses": ["Go to the 'Location History' section of your Google Account. Choose whether your account or your devices can report Location History to Google. Your account and all devices: At the top, turn Location History on or off. Only a certain device: Under 'This device' or 'Devices on this account', turn the device on or off."],
+         "context": [""]
+        },
+        {"tag": "advice_settings",
+         "patterns": ["settings", "How do I change my location stettings?", "I want to change my settings", "Changing my settings", "Change settings"],
+         "responses": ["This is how you change your location settings on the iPhone: Go to Settings > Privacy, then select Location Services. Select an app, then turn Precise Location on or off. And on Android: Open the App Drawer, go into Settings, select Location, and then enter Google Location Settings. Here, you can turn off Location Reporting and Location History. "],
+         "context": [""]
+        },
+        {"tag": "advice_anti_tracking",
+         "patterns": ["anti-tracking", "How do I get anti-tracking software?", "I want to install anti-tracking software", "Get anti tracking software"],
+         "responses": ["It's recommended to use anti-tracking software like AdGuard but if you are looking for a free option then Tor browser is the best option as recommended."],
+         "context": [""]
+        },
+        {"tag": "advice_adtracking",
+         "patterns": ["ad tracking", "How do I change ad tracking settings?", "How to stop ad tracking", "How do I stop ad tracking?", "Block ad tracking"],
+         "responses": ["On Android, go to Settings, and head to ‘Google’. Tap on the ‘Ads’ option, and tap on ‘Reset advertising ID‘. Subsequently, tap on ‘Opt out of ads personalisation‘ to block ad tracking by Google. On iPhone, go to Privacy, and select ‘Apple advertising’. Click on ‘Personalised ads‘. Turn this setting off."],
+         "context": [""]
+        },
+        {"tag": "protected_info",
+         "patterns": ["What did I protect?", "recently protected", "List of prevented risks", "What did I already do?", "I want to know what I've already protected", "I want to know what I've already done"],
+         "responses": ["You've recently done a lot of protecting, I notice. LinkedIn, Facebook, and WhatsApp can no longer acquire your location data."],
+         "context": [""]
+        },
+        {"tag": "current_risk",
+         "patterns": ["What are my risks?", "Am I at risk?", "What risks are there?", "Current risks?", "What am I doing wrong?", "my risks" ],
+         "responses": ["Your current risk level is high, Snapchat and Tiktok have access to your personal data and sell this to other companies.", "Your current risk level is medium, there is one app which collects sensitive data."],
+         "context": [""]
+        },
+        {"tag": "risk_info",
+         "patterns": ["more", "I want to know more", "I would like to know more about that", "Can you tell me more?"],
+         "responses": ["The apps sell the following information about you: Snapchat and Tiktok know: 1 you live at the Goudvinkz in Numansdorp, go to school at Hogeschool Utrecht. 2 You travel through Rotterdam with public transport on your way to school. 3 The apps also know you have visited Hungary with other students. 4. You went to the hospital for a check-up last year."],
+         "context": [""]
+        },
+        {"tag": "risk_protect",
+         "patterns": ["How do I prevent Snapchat and Tiktok from knowing that?", "I don't want to share that data", "I don't want to share that with snapchat", "I don't want them to know this", "How can I prevent that?", "What can I do to prevent that?", "How do I prevent Snapchat and tiktok from gaining access to my data?"],
+         "responses": ["If you want to protect this, you could turn off your location settings for the applications mentioned"],
+         "context": [""]
+        },
+        {"tag": "control_question",
+         "patterns": ["Okay", "Okay, thanks", "Ok", "Oke"],
+         "responses": ["Did this information help you?"],
+         "context": [""]
+        },
+        {"tag": "thanks_help",
+         "patterns": ["Yes, this helped", "Yes, thank you", "Yes, thank you for helping me", "Yes thanks", "Yes thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        }
+   ]
+}
